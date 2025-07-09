@@ -1,0 +1,1316 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hatay İş İnsanları Birliği</title>
+<script src="https://cdn.tailwindcss.com/3.4.16"></script>
+<script>tailwind.config={theme:{extend:{colors:{primary:'#1B365D',secondary:'#D4AF37'},borderRadius:{'none':'0px','sm':'4px',DEFAULT:'8px','md':'12px','lg':'16px','xl':'20px','2xl':'24px','3xl':'32px','full':'9999px','button':'8px'}}}}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css">
+<style>
+:where([class^="ri-"])::before { content: "\f3c2"; }
+body {
+font-family: 'Inter', sans-serif;
+}
+.hero-section {
+background-image: linear-gradient(to right, rgba(27, 54, 93, 0.9), rgba(27, 54, 93, 0.7), rgba(27, 54, 93, 0.5), rgba(27, 54, 93, 0.3), rgba(27, 54, 93, 0.1)), url('https://readdy.ai/api/search-image?query=beautiful%20landscape%20of%20Hatay%20Turkey%20with%20mountains%20and%20business%20district%2C%20professional%20photography%2C%20soft%20lighting%2C%20corporate%20atmosphere%2C%20modern%20architecture&width=1920&height=1080&seq=hero1&orientation=landscape');
+background-size: cover;
+background-position: center;
+}
+.timeline-item:not(:last-child)::before {
+content: '';
+position: absolute;
+left: 15px;
+top: 30px;
+bottom: -30px;
+width: 2px;
+background-color: #D4AF37;
+}
+.timeline-dot {
+position: absolute;
+left: 0;
+top: 24px;
+width: 32px;
+height: 32px;
+background-color: #D4AF37;
+border: 4px solid #1B365D;
+border-radius: 50%;
+z-index: 1;
+}
+input:focus, textarea:focus, select:focus {
+outline: none;
+border-color: #D4AF37;
+box-shadow: 0 0 0 2px rgba(212, 175, 55, 0.2);
+}
+.nav-link {
+position: relative;
+}
+.nav-link::after {
+content: '';
+position: absolute;
+width: 0;
+height: 2px;
+bottom: -4px;
+left: 0;
+background-color: #D4AF37;
+transition: width 0.3s;
+}
+.nav-link:hover::after, .nav-link.active::after {
+width: 100%;
+}
+.card-hover {
+transition: transform 0.3s, box-shadow 0.3s;
+}
+.card-hover:hover {
+transform: translateY(-5px);
+box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1);
+}
+.custom-checkbox {
+appearance: none;
+width: 20px;
+height: 20px;
+border: 2px solid #1B365D;
+border-radius: 4px;
+position: relative;
+cursor: pointer;
+}
+.custom-checkbox:checked {
+background-color: #1B365D;
+}
+.custom-checkbox:checked::after {
+content: '✓';
+position: absolute;
+color: white;
+font-size: 14px;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+}
+.tab-content {
+display: none;
+}
+.tab-content.active {
+display: block;
+}
+</style>
+</head>
+<body class="bg-gray-50">
+<!-- Header -->
+<header class="bg-white shadow-md sticky top-0 z-50">
+<div class="container mx-auto px-4 py-3 flex items-center justify-between">
+<div class="flex items-center">
+<img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAwIiBoZWlnaHQ9IjEwMCIgdmlld0JveD0iMCAwIDEwMCAxMDAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxjaXJjbGUgY3g9IjUwIiBjeT0iNTAiIHI9IjQ4IiBzdHJva2U9IiMxQjM2NUQiIHN0cm9rZS13aWR0aD0iNCIvPgo8Y2lyY2xlIGN4PSI1MCIgY3k9IjUwIiByPSIzMCIgZmlsbD0iI0Y1RTJBOCIvPgo8cGF0aCBkPSJNMzAgNjBDMzAgNjAgNDAgNzAgNTAgNzBDNjAgNzAgNzAgNjAgNzAgNjBDNzAgNjAgNjUgNDUgNTAgNDVDMzUgNDUgMzAgNjAgMzAgNjBaIiBmaWxsPSIjRUE4QzU1Ii8+CjxwYXRoIGQ9Ik0zMCA2MEMzMCA2MCAzNSA0NSA1MCA0NUM2NSA0NSA3MCA2MCA3MCA2MCIgc3Ryb2tlPSIjMUIzNjVEIiBzdHJva2Utd2lkdGg9IjIiLz4KPHBhdGggZD0iTTQwIDUwQzQwIDUwIDQyIDU1IDUwIDU1QzU4IDU1IDYwIDUwIDYwIDUwIiBzdHJva2U9IiMxQjM2NUQiIHN0cm9rZS13aWR0aD0iMiIvPgo8Y2lyY2xlIGN4PSI1MCIgY3k9IjM1IiByPSI1IiBmaWxsPSIjQzkzQTNBIi8+CjxwYXRoIGQ9Ik01MiAzMkw1NSAyOCIgc3Ryb2tlPSIjQzkzQTNBIiBzdHJva2Utd2lkdGg9IjIiLz4KPC9zdmc+" alt="Hatay İş İnsanları Birliği" class="h-16">
+<div class="ml-4">
+<h1 class="text-xl font-bold text-primary">Hatay İş İnsanları Birliği</h1>
+<p class="text-sm text-gray-600">Yatırım ve İş Birliği Platformu</p>
+</div>
+</div>
+<nav class="hidden md:flex items-center space-x-8">
+<a href="#" class="nav-link text-primary font-medium active">Ana Sayfa</a>
+<a href="#hakkimizda" class="nav-link text-primary font-medium">Hakkımızda</a>
+<a href="#uyelik" class="nav-link text-primary font-medium">Üyelik</a>
+<a href="#firsatlar" class="nav-link text-primary font-medium">İş Birliği Fırsatları</a>
+<a href="#etkinlikler" class="nav-link text-primary font-medium">Etkinlikler</a>
+<a href="#basin" class="nav-link text-primary font-medium">Basında Biz</a>
+<a href="#iletisim" class="nav-link text-primary font-medium">İletişim</a>
+</nav>
+<div class="flex items-center space-x-4">
+<div class="hidden md:flex items-center space-x-2">
+<a href="#" class="text-gray-600 hover:text-primary">TR</a>
+<span class="text-gray-400">|</span>
+<a href="#" class="text-gray-600 hover:text-primary">EN</a>
+</div>
+<div class="hidden md:flex items-center space-x-3">
+<a href="#" class="px-4 py-2 text-primary border border-primary !rounded-button hover:bg-gray-50 whitespace-nowrap">Üye Girişi</a>
+<a href="#" class="px-4 py-2 bg-primary text-white !rounded-button hover:bg-opacity-90 whitespace-nowrap">Üye Ol</a>
+</div>
+<button class="md:hidden w-10 h-10 flex items-center justify-center text-primary">
+<i class="ri-menu-line ri-2x"></i>
+</button>
+</div>
+</div>
+</header>
+<!-- Hero Section -->
+<section class="hero-section h-[600px] flex items-center">
+<div class="container mx-auto px-4">
+<div class="max-w-2xl text-white">
+<h1 class="text-4xl md:text-5xl font-bold mb-6">Hatay'ın Geleceğine Yön Veren İş Birliği Platformu</h1>
+<p class="text-lg mb-8">Bölgesel kalkınmayı destekleyen, iş insanlarını bir araya getiren ve sürdürülebilir işbirlikleri oluşturan güçlü bir platform.</p>
+<div class="flex flex-wrap gap-4">
+<a href="#" class="px-6 py-3 bg-secondary text-primary font-bold !rounded-button hover:bg-opacity-90 whitespace-nowrap">Hemen Üye Ol</a>
+<a href="#" class="px-6 py-3 border-2 border-white text-white font-bold !rounded-button hover:bg-white hover:bg-opacity-10 whitespace-nowrap">Daha Fazla Bilgi</a>
+</div>
+</div>
+</div>
+</section>
+<!-- Misyon & Vizyon Section -->
+<section class="py-20 bg-white">
+<div class="container mx-auto px-4">
+<div class="text-center mb-16">
+<h2 class="text-3xl font-bold text-primary mb-4">Misyonumuz & Vizyonumuz</h2>
+<p class="text-gray-600 max-w-3xl mx-auto">Hatay'ın ekonomik potansiyelini en üst düzeye çıkarmak için iş insanlarını bir araya getiriyor, sürdürülebilir işbirlikleri oluşturuyoruz.</p>
+</div>
+<div class="grid md:grid-cols-2 gap-12">
+<div class="bg-white p-8 rounded-lg shadow-lg border-t-4 border-primary">
+<div class="w-16 h-16 bg-primary bg-opacity-10 rounded-full flex items-center justify-center mb-6">
+<i class="ri-flag-line ri-2x text-primary"></i>
+</div>
+<h3 class="text-2xl font-bold text-primary mb-4">Misyonumuz</h3>
+<p class="text-gray-600 mb-6">Hatay'daki iş insanlarını bir araya getirerek bölgesel kalkınmayı desteklemek, yeni iş fırsatları yaratmak ve sürdürülebilir ekonomik büyümeyi teşvik etmek.</p>
+<ul class="space-y-3">
+<li class="flex items-start">
+<div class="w-6 h-6 rounded-full bg-secondary bg-opacity-20 flex items-center justify-center mt-1 mr-3">
+<i class="ri-check-line text-secondary"></i>
+</div>
+<span class="text-gray-700">İş insanları arasında güçlü bir ağ oluşturmak</span>
+</li>
+<li class="flex items-start">
+<div class="w-6 h-6 rounded-full bg-secondary bg-opacity-20 flex items-center justify-center mt-1 mr-3">
+<i class="ri-check-line text-secondary"></i>
+</div>
+<span class="text-gray-700">Yatırımcılar ile girişimcileri buluşturmak</span>
+</li>
+<li class="flex items-start">
+<div class="w-6 h-6 rounded-full bg-secondary bg-opacity-20 flex items-center justify-center mt-1 mr-3">
+<i class="ri-check-line text-secondary"></i>
+</div>
+<span class="text-gray-700">Bölgesel kalkınmaya katkı sağlamak</span>
+</li>
+</ul>
+</div>
+<div class="bg-white p-8 rounded-lg shadow-lg border-t-4 border-secondary">
+<div class="w-16 h-16 bg-secondary bg-opacity-10 rounded-full flex items-center justify-center mb-6">
+<i class="ri-eye-line ri-2x text-secondary"></i>
+</div>
+<h3 class="text-2xl font-bold text-primary mb-4">Vizyonumuz</h3>
+<p class="text-gray-600 mb-6">Hatay'ı ulusal ve uluslararası düzeyde ekonomik bir güç merkezi haline getirmek, inovasyon ve işbirliğini teşvik ederek bölgenin rekabet gücünü artırmak.</p>
+<ul class="space-y-3">
+<li class="flex items-start">
+<div class="w-6 h-6 rounded-full bg-primary bg-opacity-20 flex items-center justify-center mt-1 mr-3">
+<i class="ri-check-line text-primary"></i>
+</div>
+<span class="text-gray-700">Hatay'ı yatırım merkezi haline getirmek</span>
+</li>
+<li class="flex items-start">
+<div class="w-6 h-6 rounded-full bg-primary bg-opacity-20 flex items-center justify-center mt-1 mr-3">
+<i class="ri-check-line text-primary"></i>
+</div>
+<span class="text-gray-700">Sürdürülebilir ekonomik büyümeyi desteklemek</span>
+</li>
+<li class="flex items-start">
+<div class="w-6 h-6 rounded-full bg-primary bg-opacity-20 flex items-center justify-center mt-1 mr-3">
+<i class="ri-check-line text-primary"></i>
+</div>
+<span class="text-gray-700">İnovasyon ve dijital dönüşümü teşvik etmek</span>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</section>
+<!-- Stats Section -->
+<section class="py-16 bg-gray-50">
+<div class="container mx-auto px-4">
+<div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+<div class="text-center">
+<div class="text-4xl font-bold text-primary mb-2">350+</div>
+<div class="text-gray-600">Aktif Üye</div>
+</div>
+<div class="text-center">
+<div class="text-4xl font-bold text-primary mb-2">75+</div>
+<div class="text-gray-600">Tamamlanan Proje</div>
+</div>
+<div class="text-center">
+<div class="text-4xl font-bold text-primary mb-2">120M+</div>
+<div class="text-gray-600">Toplam Yatırım (TL)</div>
+</div>
+<div class="text-center">
+<div class="text-4xl font-bold text-primary mb-2">45+</div>
+<div class="text-gray-600">İş Birliği Anlaşması</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Opportunities Section -->
+<section class="py-20 bg-white" id="firsatlar">
+<div class="container mx-auto px-4">
+<div class="text-center mb-16">
+<h2 class="text-3xl font-bold text-primary mb-4">Güncel İş Birliği Fırsatları</h2>
+<p class="text-gray-600 max-w-3xl mx-auto">Hatay'da yatırım yapmak ve iş ortakları bulmak için en güncel fırsatları keşfedin.</p>
+</div>
+<div class="relative">
+<div class="flex overflow-x-auto pb-8 space-x-6 no-scrollbar">
+<div class="min-w-[350px] bg-white rounded-lg shadow-md overflow-hidden card-hover">
+<img src="https://readdy.ai/api/search-image?query=modern%20olive%20oil%20production%20facility%20with%20machinery%20and%20workers%2C%20industrial%20setting%2C%20high%20quality%20olives%2C%20professional%20photography&width=600&height=400&seq=olive1&orientation=landscape" alt="Zeytinyağı Üretim Tesisi" class="w-full h-48 object-cover object-top">
+<div class="p-6">
+<div class="flex items-center mb-4">
+<span class="px-3 py-1 bg-green-100 text-green-800 text-xs font-medium rounded-full">Tarım</span>
+<span class="ml-auto text-sm text-gray-500">Yayınlanma: 15.05.2025</span>
+</div>
+<h3 class="text-xl font-bold text-primary mb-2">Zeytinyağı Üretim Tesisi Ortaklığı</h3>
+<p class="text-gray-600 mb-4">Modern teknoloji ile donatılmış zeytinyağı üretim tesisi için %40 hisse ile ortak aranmaktadır.</p>
+<div class="flex items-center justify-between">
+<span class="text-primary font-bold">2.5M TL</span>
+<a href="#" class="px-4 py-2 bg-primary text-white !rounded-button hover:bg-opacity-90 whitespace-nowrap">Detaylar</a>
+</div>
+</div>
+</div>
+<div class="min-w-[350px] bg-white rounded-lg shadow-md overflow-hidden card-hover">
+<img src="https://readdy.ai/api/search-image?query=modern%20logistics%20center%20with%20trucks%2C%20warehouse%2C%20shipping%20containers%2C%20professional%20business%20setting%2C%20clean%20environment&width=600&height=400&seq=logistic1&orientation=landscape" alt="Lojistik Merkezi" class="w-full h-48 object-cover object-top">
+<div class="p-6">
+<div class="flex items-center mb-4">
+<span class="px-3 py-1 bg-blue-100 text-blue-800 text-xs font-medium rounded-full">Lojistik</span>
+<span class="ml-auto text-sm text-gray-500">Yayınlanma: 10.05.2025</span>
+</div>
+<h3 class="text-xl font-bold text-primary mb-2">Lojistik Merkezi Yatırımı</h3>
+<p class="text-gray-600 mb-4">Suriye sınırına yakın konumda kurulacak modern lojistik merkezi için yatırımcı aranmaktadır.</p>
+<div class="flex items-center justify-between">
+<span class="text-primary font-bold">8M TL</span>
+<a href="#" class="px-4 py-2 bg-primary text-white !rounded-button hover:bg-opacity-90 whitespace-nowrap">Detaylar</a>
+</div>
+</div>
+</div>
+<div class="min-w-[350px] bg-white rounded-lg shadow-md overflow-hidden card-hover">
+<img src="https://readdy.ai/api/search-image?query=modern%20textile%20factory%20with%20workers%20and%20machinery%2C%20industrial%20setting%2C%20fabric%20production%2C%20professional%20photography&width=600&height=400&seq=textile1&orientation=landscape" alt="Tekstil Fabrikası" class="w-full h-48 object-cover object-top">
+<div class="p-6">
+<div class="flex items-center mb-4">
+<span class="px-3 py-1 bg-purple-100 text-purple-800 text-xs font-medium rounded-full">Tekstil</span>
+<span class="ml-auto text-sm text-gray-500">Yayınlanma: 05.05.2025</span>
+</div>
+<h3 class="text-xl font-bold text-primary mb-2">Tekstil Fabrikası Genişletme</h3>
+<p class="text-gray-600 mb-4">Mevcut tekstil fabrikasının kapasitesini artırmak için finansal ortak aranmaktadır.</p>
+<div class="flex items-center justify-between">
+<span class="text-primary font-bold">5M TL</span>
+<a href="#" class="px-4 py-2 bg-primary text-white !rounded-button hover:bg-opacity-90 whitespace-nowrap">Detaylar</a>
+</div>
+</div>
+</div>
+<div class="min-w-[350px] bg-white rounded-lg shadow-md overflow-hidden card-hover">
+<img src="https://readdy.ai/api/search-image?query=modern%20tourism%20facility%20with%20swimming%20pool%2C%20hotel%20rooms%2C%20and%20restaurant%2C%20luxury%20resort%2C%20professional%20photography&width=600&height=400&seq=tourism1&orientation=landscape" alt="Turizm Tesisi" class="w-full h-48 object-cover object-top">
+<div class="p-6">
+<div class="flex items-center mb-4">
+<span class="px-3 py-1 bg-yellow-100 text-yellow-800 text-xs font-medium rounded-full">Turizm</span>
+<span class="ml-auto text-sm text-gray-500">Yayınlanma: 01.05.2025</span>
+</div>
+<h3 class="text-xl font-bold text-primary mb-2">Butik Otel Projesi</h3>
+<p class="text-gray-600 mb-4">Hatay'ın tarihi dokusunu yansıtan butik otel projesi için yatırımcı ortaklar aranmaktadır.</p>
+<div class="flex items-center justify-between">
+<span class="text-primary font-bold">12M TL</span>
+<a href="#" class="px-4 py-2 bg-primary text-white !rounded-button hover:bg-opacity-90 whitespace-nowrap">Detaylar</a>
+</div>
+</div>
+</div>
+</div>
+<div class="absolute top-1/2 -left-4 transform -translate-y-1/2 w-10 h-10 bg-white rounded-full shadow-md flex items-center justify-center cursor-pointer">
+<i class="ri-arrow-left-s-line text-primary ri-lg"></i>
+</div>
+<div class="absolute top-1/2 -right-4 transform -translate-y-1/2 w-10 h-10 bg-white rounded-full shadow-md flex items-center justify-center cursor-pointer">
+<i class="ri-arrow-right-s-line text-primary ri-lg"></i>
+</div>
+</div>
+<div class="text-center mt-10">
+<a href="#" class="px-6 py-3 bg-primary text-white !rounded-button hover:bg-opacity-90 inline-block whitespace-nowrap">Tüm Fırsatları Görüntüle</a>
+</div>
+</div>
+</section>
+<!-- Sectors Section -->
+<section class="py-20 bg-gray-50">
+<div class="container mx-auto px-4">
+<div class="text-center mb-16">
+<h2 class="text-3xl font-bold text-primary mb-4">Öne Çıkan Sektörler</h2>
+<p class="text-gray-600 max-w-3xl mx-auto">Hatay'da yatırım potansiyeli yüksek olan sektörleri keşfedin ve fırsatları değerlendirin.</p>
+</div>
+<div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+<div class="bg-white p-6 rounded-lg shadow-md text-center card-hover">
+<div class="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
+<i class="ri-plant-line ri-2x text-green-600"></i>
+</div>
+<h3 class="text-lg font-bold text-primary mb-2">Tarım ve Gıda</h3>
+<p class="text-gray-600 text-sm">Zeytinyağı, narenciye, baharatlar ve diğer tarımsal ürünler</p>
+</div>
+<div class="bg-white p-6 rounded-lg shadow-md text-center card-hover">
+<div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
+<i class="ri-ship-line ri-2x text-blue-600"></i>
+</div>
+<h3 class="text-lg font-bold text-primary mb-2">Lojistik</h3>
+<p class="text-gray-600 text-sm">Liman işletmeciliği, depolama ve taşımacılık hizmetleri</p>
+</div>
+<div class="bg-white p-6 rounded-lg shadow-md text-center card-hover">
+<div class="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-4">
+<i class="ri-t-shirt-line ri-2x text-purple-600"></i>
+</div>
+<h3 class="text-lg font-bold text-primary mb-2">Tekstil</h3>
+<p class="text-gray-600 text-sm">Hazır giyim, iplik üretimi ve kumaş dokuma</p>
+</div>
+<div class="bg-white p-6 rounded-lg shadow-md text-center card-hover">
+<div class="w-16 h-16 bg-yellow-100 rounded-full flex items-center justify-center mx-auto mb-4">
+<i class="ri-hotel-line ri-2x text-yellow-600"></i>
+</div>
+<h3 class="text-lg font-bold text-primary mb-2">Turizm</h3>
+<p class="text-gray-600 text-sm">Kültür turizmi, gastronomi turizmi ve konaklama tesisleri</p>
+</div>
+<div class="bg-white p-6 rounded-lg shadow-md text-center card-hover">
+<div class="w-16 h-16 bg-red-100 rounded-full flex items-center justify-center mx-auto mb-4">
+<i class="ri-building-line ri-2x text-red-600"></i>
+</div>
+<h3 class="text-lg font-bold text-primary mb-2">İnşaat</h3>
+<p class="text-gray-600 text-sm">Konut projeleri, ticari yapılar ve altyapı çalışmaları</p>
+</div>
+<div class="bg-white p-6 rounded-lg shadow-md text-center card-hover">
+<div class="w-16 h-16 bg-indigo-100 rounded-full flex items-center justify-center mx-auto mb-4">
+<i class="ri-recycle-line ri-2x text-indigo-600"></i>
+</div>
+<h3 class="text-lg font-bold text-primary mb-2">Enerji</h3>
+<p class="text-gray-600 text-sm">Yenilenebilir enerji, güneş enerjisi ve enerji verimliliği</p>
+</div>
+<div class="bg-white p-6 rounded-lg shadow-md text-center card-hover">
+<div class="w-16 h-16 bg-pink-100 rounded-full flex items-center justify-center mx-auto mb-4">
+<i class="ri-medicine-bottle-line ri-2x text-pink-600"></i>
+</div>
+<h3 class="text-lg font-bold text-primary mb-2">Sağlık</h3>
+<p class="text-gray-600 text-sm">Sağlık turizmi, medikal cihazlar ve ilaç üretimi</p>
+</div>
+<div class="bg-white p-6 rounded-lg shadow-md text-center card-hover">
+<div class="w-16 h-16 bg-orange-100 rounded-full flex items-center justify-center mx-auto mb-4">
+<i class="ri-database-2-line ri-2x text-orange-600"></i>
+</div>
+<h3 class="text-lg font-bold text-primary mb-2">Teknoloji</h3>
+<p class="text-gray-600 text-sm">Yazılım geliştirme, e-ticaret ve dijital dönüşüm</p>
+</div>
+</div>
+</div>
+</section>
+<!-- About Section -->
+<section class="py-20 bg-white" id="hakkimizda">
+<div class="container mx-auto px-4">
+<div class="grid md:grid-cols-2 gap-12 items-center">
+<div>
+<h2 class="text-3xl font-bold text-primary mb-6">Hakkımızda</h2>
+<p class="text-gray-600 mb-6">Hatay İş İnsanları Birliği, 2020 yılında Hatay'ın ekonomik potansiyelini en üst düzeye çıkarmak amacıyla kurulmuş bir iş birliği platformudur. Bölgedeki iş insanlarını, girişimcileri ve yatırımcıları bir araya getirerek sürdürülebilir ekonomik büyümeyi desteklemeyi hedeflemekteyiz.</p>
+<p class="text-gray-600 mb-8">Platformumuz, üyelerine geniş bir network ağı, yatırım fırsatları, eğitim programları ve danışmanlık hizmetleri sunmaktadır. Ayrıca, bölgesel ve ulusal düzeyde düzenlediğimiz etkinliklerle iş insanlarının bir araya gelmesini sağlıyoruz.</p>
+<div class="flex flex-wrap gap-4">
+<a href="#" class="px-5 py-2.5 bg-primary text-white !rounded-button hover:bg-opacity-90 whitespace-nowrap">Daha Fazla Bilgi</a>
+<a href="#" class="px-5 py-2.5 border border-primary text-primary !rounded-button hover:bg-gray-50 whitespace-nowrap">Yönetim Kurulu</a>
+</div>
+</div>
+<div class="relative">
+<img src="https://readdy.ai/api/search-image?query=business%20meeting%20with%20diverse%20group%20of%20professionals%20in%20a%20modern%20conference%20room%2C%20business%20attire%2C%20professional%20setting%2C%20corporate%20atmosphere&width=800&height=600&seq=meeting1&orientation=landscape" alt="Hatay İş İnsanları Birliği Toplantısı" class="rounded-lg shadow-xl w-full">
+<div class="absolute -bottom-6 -left-6 bg-secondary text-primary font-bold px-6 py-4 rounded-lg shadow-lg">
+Kurulduğumuz günden bu yana<br>
+<span class="text-2xl">350+ Aktif Üye</span>
+</div>
+</div>
+</div>
+<div class="mt-24">
+<h3 class="text-2xl font-bold text-primary mb-8 text-center">Kuruluşumuzdan Bugüne</h3>
+<div class="relative pl-10 space-y-12">
+<div class="relative timeline-item">
+<div class="timeline-dot"></div>
+<div class="bg-white p-6 rounded-lg shadow-md ml-8">
+<h4 class="text-xl font-bold text-primary mb-2">2020 - Kuruluş</h4>
+<p class="text-gray-600">Hatay'daki önde gelen 50 iş insanının bir araya gelmesiyle platformumuz kuruldu. İlk genel kurul toplantısı gerçekleştirildi ve yönetim kurulu seçildi.</p>
+</div>
+</div>
+<div class="relative timeline-item">
+<div class="timeline-dot"></div>
+<div class="bg-white p-6 rounded-lg shadow-md ml-8">
+<h4 class="text-xl font-bold text-primary mb-2">2021 - İlk Büyük Etkinlik</h4>
+<p class="text-gray-600">Hatay Ekonomi Zirvesi düzenlendi. 200'den fazla iş insanı ve 20'den fazla ulusal yatırımcının katılımıyla gerçekleşen zirve, bölgeye 25 milyon TL'lik yatırım sözü getirdi.</p>
+</div>
+</div>
+<div class="relative timeline-item">
+<div class="timeline-dot"></div>
+<div class="bg-white p-6 rounded-lg shadow-md ml-8">
+<h4 class="text-xl font-bold text-primary mb-2">2022 - Deprem Dayanışması</h4>
+<p class="text-gray-600">Bölgede yaşanan deprem felaketi sonrası, üyelerimizle birlikte "Hatay'ı Yeniden İnşa Ediyoruz" kampanyasını başlattık ve 50 milyon TL'lik yardım topladık.</p>
+</div>
+</div>
+<div class="relative timeline-item">
+<div class="timeline-dot"></div>
+<div class="bg-white p-6 rounded-lg shadow-md ml-8">
+<h4 class="text-xl font-bold text-primary mb-2">2023 - Uluslararası Açılım</h4>
+<p class="text-gray-600">İlk uluslararası iş birliği anlaşmamızı Ortadoğu ülkeleriyle imzaladık. 10 farklı ülkeden iş insanlarının katılımıyla "Sınır Ötesi Ticaret Forumu" düzenledik.</p>
+</div>
+</div>
+<div class="relative timeline-item">
+<div class="timeline-dot"></div>
+<div class="bg-white p-6 rounded-lg shadow-md ml-8">
+<h4 class="text-xl font-bold text-primary mb-2">2024 - Dijital Dönüşüm</h4>
+<p class="text-gray-600">Üyelerimize özel dijital platform ve mobil uygulamamızı hayata geçirdik. "Hatay Dijital Dönüşüm Programı" ile 100'den fazla KOBİ'nin dijitalleşmesine destek olduk.</p>
+</div>
+</div>
+<div class="relative timeline-item">
+<div class="timeline-dot"></div>
+<div class="bg-white p-6 rounded-lg shadow-md ml-8">
+<h4 class="text-xl font-bold text-primary mb-2">2025 - Bugün</h4>
+<p class="text-gray-600">350'den fazla aktif üyemiz, 75'ten fazla tamamlanan projemiz ve 120 milyon TL'yi aşan toplam yatırım hacmiyle bölgenin en güçlü iş birliği platformu olarak faaliyetlerimize devam ediyoruz.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Membership Section -->
+<section class="py-20 bg-gray-50" id="uyelik">
+<div class="container mx-auto px-4">
+<div class="text-center mb-16">
+<h2 class="text-3xl font-bold text-primary mb-4">Üyelik ve Katılım</h2>
+<p class="text-gray-600 max-w-3xl mx-auto">Hatay İş İnsanları Birliği'ne üye olarak geniş bir network ağına, yatırım fırsatlarına ve özel etkinliklere erişim sağlayabilirsiniz.</p>
+</div>
+<div class="grid md:grid-cols-2 gap-12">
+<div>
+<h3 class="text-2xl font-bold text-primary mb-6">Üyelik Avantajları</h3>
+<div class="space-y-6">
+<div class="flex">
+<div class="w-12 h-12 bg-primary bg-opacity-10 rounded-full flex items-center justify-center mr-4 flex-shrink-0">
+<i class="ri-group-line ri-lg text-primary"></i>
+</div>
+<div>
+<h4 class="text-lg font-bold text-primary mb-2">Geniş Network Ağı</h4>
+<p class="text-gray-600">350'den fazla aktif üye ile tanışma ve iş birliği fırsatı yakalayın.</p>
+</div>
+</div>
+<div class="flex">
+<div class="w-12 h-12 bg-primary bg-opacity-10 rounded-full flex items-center justify-center mr-4 flex-shrink-0">
+<i class="ri-line-chart-line ri-lg text-primary"></i>
+</div>
+<div>
+<h4 class="text-lg font-bold text-primary mb-2">Yatırım Fırsatları</h4>
+<p class="text-gray-600">Özel yatırım projelerine erken erişim ve öncelikli katılım hakkı elde edin.</p>
+</div>
+</div>
+<div class="flex">
+<div class="w-12 h-12 bg-primary bg-opacity-10 rounded-full flex items-center justify-center mr-4 flex-shrink-0">
+<i class="ri-calendar-event-line ri-lg text-primary"></i>
+</div>
+<div>
+<h4 class="text-lg font-bold text-primary mb-2">Özel Etkinlikler</h4>
+<p class="text-gray-600">Sadece üyelere özel düzenlenen etkinliklere, seminerlere ve eğitimlere katılın.</p>
+</div>
+</div>
+<div class="flex">
+<div class="w-12 h-12 bg-primary bg-opacity-10 rounded-full flex items-center justify-center mr-4 flex-shrink-0">
+<i class="ri-customer-service-line ri-lg text-primary"></i>
+</div>
+<div>
+<h4 class="text-lg font-bold text-primary mb-2">Danışmanlık Hizmetleri</h4>
+<p class="text-gray-600">Hukuk, finans, vergi ve dijital dönüşüm alanlarında ücretsiz danışmanlık hizmetlerinden yararlanın.</p>
+</div>
+</div>
+<div class="flex">
+<div class="w-12 h-12 bg-primary bg-opacity-10 rounded-full flex items-center justify-center mr-4 flex-shrink-0">
+<i class="ri-advertisement-line ri-lg text-primary"></i>
+</div>
+<div>
+<h4 class="text-lg font-bold text-primary mb-2">Tanıtım Desteği</h4>
+<p class="text-gray-600">İşletmenizi platformumuzun web sitesi, sosyal medya kanalları ve etkinliklerinde tanıtma fırsatı yakalayın.</p>
+</div>
+</div>
+</div>
+</div>
+<div>
+<h3 class="text-2xl font-bold text-primary mb-6">Üyelik Başvurusu</h3>
+<div class="bg-white p-8 rounded-lg shadow-md">
+<div class="flex mb-8">
+<div class="w-8 h-8 rounded-full bg-primary text-white flex items-center justify-center mr-3">1</div>
+<div class="w-full h-1 bg-gray-200 self-center relative">
+<div class="absolute left-0 top-0 h-full bg-primary" style="width: 33%;"></div>
+</div>
+<div class="w-8 h-8 rounded-full bg-gray-200 text-gray-600 flex items-center justify-center mx-3">2</div>
+<div class="w-full h-1 bg-gray-200 self-center"></div>
+<div class="w-8 h-8 rounded-full bg-gray-200 text-gray-600 flex items-center justify-center ml-3">3</div>
+</div>
+<form>
+<div class="mb-6">
+<label for="fullname" class="block text-gray-700 font-medium mb-2">Ad Soyad</label>
+<input type="text" id="fullname" class="w-full px-4 py-2 border border-gray-300 rounded focus:border-primary" placeholder="Adınız Soyadınız">
+</div>
+<div class="mb-6">
+<label for="company" class="block text-gray-700 font-medium mb-2">Şirket Adı</label>
+<input type="text" id="company" class="w-full px-4 py-2 border border-gray-300 rounded focus:border-primary" placeholder="Şirketinizin Adı">
+</div>
+<div class="mb-6">
+<label for="position" class="block text-gray-700 font-medium mb-2">Pozisyon</label>
+<input type="text" id="position" class="w-full px-4 py-2 border border-gray-300 rounded focus:border-primary" placeholder="Şirketteki Pozisyonunuz">
+</div>
+<div class="mb-6">
+<label for="email" class="block text-gray-700 font-medium mb-2">E-posta Adresi</label>
+<input type="email" id="email" class="w-full px-4 py-2 border border-gray-300 rounded focus:border-primary" placeholder="ornek@sirket.com">
+</div>
+<div class="mb-6">
+<label for="phone" class="block text-gray-700 font-medium mb-2">Telefon</label>
+<input type="tel" id="phone" class="w-full px-4 py-2 border border-gray-300 rounded focus:border-primary" placeholder="05XX XXX XX XX">
+</div>
+<div class="mb-6">
+<label for="sector" class="block text-gray-700 font-medium mb-2">Faaliyet Sektörü</label>
+<div class="relative">
+<select id="sector" class="w-full px-4 py-2 border border-gray-300 rounded appearance-none focus:border-primary pr-8">
+<option value="" selected disabled>Sektör Seçiniz</option>
+<option value="tarim">Tarım ve Gıda</option>
+<option value="lojistik">Lojistik</option>
+<option value="tekstil">Tekstil</option>
+<option value="turizm">Turizm</option>
+<option value="insaat">İnşaat</option>
+<option value="enerji">Enerji</option>
+<option value="saglik">Sağlık</option>
+<option value="teknoloji">Teknoloji</option>
+<option value="diger">Diğer</option>
+</select>
+<div class="absolute right-3 top-1/2 transform -translate-y-1/2 pointer-events-none">
+<i class="ri-arrow-down-s-line text-gray-500"></i>
+</div>
+</div>
+</div>
+<div class="mb-6">
+<label class="flex items-center">
+<input type="checkbox" class="custom-checkbox mr-2">
+<span class="text-gray-700">Üyelik koşullarını ve gizlilik politikasını okudum, kabul ediyorum.</span>
+</label>
+</div>
+<button type="submit" class="w-full py-3 bg-primary text-white font-bold !rounded-button hover:bg-opacity-90 whitespace-nowrap">Devam Et</button>
+</form>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Events Section -->
+<section class="py-20 bg-white" id="etkinlikler">
+<div class="container mx-auto px-4">
+<div class="text-center mb-16">
+<h2 class="text-3xl font-bold text-primary mb-4">Etkinlikler</h2>
+<p class="text-gray-600 max-w-3xl mx-auto">İş dünyasını bir araya getiren, bilgi paylaşımı ve networking imkanı sunan etkinliklerimize katılın.</p>
+</div>
+<div class="flex flex-wrap gap-4 justify-center mb-10">
+<button class="px-4 py-2 bg-primary text-white !rounded-button whitespace-nowrap">Tüm Etkinlikler</button>
+<button class="px-4 py-2 border border-gray-300 text-gray-700 !rounded-button hover:bg-gray-50 whitespace-nowrap">Yaklaşan Etkinlikler</button>
+<button class="px-4 py-2 border border-gray-300 text-gray-700 !rounded-button hover:bg-gray-50 whitespace-nowrap">Geçmiş Etkinlikler</button>
+<button class="px-4 py-2 border border-gray-300 text-gray-700 !rounded-button hover:bg-gray-50 whitespace-nowrap">Webinarlar</button>
+<button class="px-4 py-2 border border-gray-300 text-gray-700 !rounded-button hover:bg-gray-50 whitespace-nowrap">Eğitimler</button>
+</div>
+<div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+<div class="bg-white rounded-lg shadow-md overflow-hidden card-hover">
+<div class="relative">
+<img src="https://readdy.ai/api/search-image?query=business%20conference%20with%20speakers%20on%20stage%2C%20audience%20in%20a%20modern%20conference%20hall%2C%20professional%20business%20setting&width=600&height=400&seq=event1&orientation=landscape" alt="Hatay Ekonomi Zirvesi" class="w-full h-48 object-cover object-top">
+<div class="absolute top-4 left-4 bg-primary text-white px-3 py-1 rounded-full text-sm font-medium">15 Haziran 2025</div>
+</div>
+<div class="p-6">
+<h3 class="text-xl font-bold text-primary mb-2">Hatay Ekonomi Zirvesi 2025</h3>
+<p class="text-gray-600 mb-4">Hatay'ın ekonomik geleceğini şekillendirecek zirvede, ulusal ve uluslararası konuşmacılar ağırlanacak.</p>
+<div class="flex items-center text-gray-500 mb-4">
+<i class="ri-map-pin-line mr-2"></i>
+<span>Hatay Hilton Otel, Antakya</span>
+</div>
+<div class="flex items-center text-gray-500 mb-6">
+<i class="ri-time-line mr-2"></i>
+<span>09:00 - 17:00</span>
+</div>
+<a href="#" class="px-4 py-2 bg-primary text-white !rounded-button hover:bg-opacity-90 inline-block whitespace-nowrap">Kayıt Ol</a>
+</div>
+</div>
+<div class="bg-white rounded-lg shadow-md overflow-hidden card-hover">
+<div class="relative">
+<img src="https://readdy.ai/api/search-image?query=business%20networking%20event%20with%20professionals%20mingling%2C%20cocktail%20setting%2C%20elegant%20business%20attire%2C%20professional%20atmosphere&width=600&height=400&seq=event2&orientation=landscape" alt="Networking Buluşması" class="w-full h-48 object-cover object-top">
+<div class="absolute top-4 left-4 bg-secondary text-primary px-3 py-1 rounded-full text-sm font-medium">25 Haziran 2025</div>
+</div>
+<div class="p-6">
+<h3 class="text-xl font-bold text-primary mb-2">B2B Networking Buluşması</h3>
+<p class="text-gray-600 mb-4">İş insanlarının birebir görüşmeler yapabileceği, yeni iş bağlantıları kurabileceği networking etkinliği.</p>
+<div class="flex items-center text-gray-500 mb-4">
+<i class="ri-map-pin-line mr-2"></i>
+<span>Hatay Ticaret ve Sanayi Odası</span>
+</div>
+<div class="flex items-center text-gray-500 mb-6">
+<i class="ri-time-line mr-2"></i>
+<span>14:00 - 18:00</span>
+</div>
+<a href="#" class="px-4 py-2 bg-primary text-white !rounded-button hover:bg-opacity-90 inline-block whitespace-nowrap">Kayıt Ol</a>
+</div>
+</div>
+<div class="bg-white rounded-lg shadow-md overflow-hidden card-hover">
+<div class="relative">
+<img src="https://readdy.ai/api/search-image?query=digital%20marketing%20workshop%20with%20presenter%20and%20audience%20in%20a%20modern%20meeting%20room%2C%20professional%20business%20setting&width=600&height=400&seq=event3&orientation=landscape" alt="Dijital Pazarlama Eğitimi" class="w-full h-48 object-cover object-top">
+<div class="absolute top-4 left-4 bg-green-500 text-white px-3 py-1 rounded-full text-sm font-medium">10 Temmuz 2025</div>
+</div>
+<div class="p-6">
+<h3 class="text-xl font-bold text-primary mb-2">Dijital Pazarlama Eğitimi</h3>
+<p class="text-gray-600 mb-4">KOBİ'ler için dijital pazarlama stratejileri, sosyal medya yönetimi ve e-ticaret eğitimi.</p>
+<div class="flex items-center text-gray-500 mb-4">
+<i class="ri-map-pin-line mr-2"></i>
+<span>Hatay Teknoloji Geliştirme Merkezi</span>
+</div>
+<div class="flex items-center text-gray-500 mb-6">
+<i class="ri-time-line mr-2"></i>
+<span>10:00 - 16:00</span>
+</div>
+<a href="#" class="px-4 py-2 bg-primary text-white !rounded-button hover:bg-opacity-90 inline-block whitespace-nowrap">Kayıt Ol</a>
+</div>
+</div>
+<div class="bg-white rounded-lg shadow-md overflow-hidden card-hover">
+<div class="relative">
+<img src="https://readdy.ai/api/search-image?query=international%20trade%20fair%20with%20exhibition%20booths%20and%20visitors%2C%20business%20professionals%20networking%2C%20corporate%20atmosphere&width=600&height=400&seq=event4&orientation=landscape" alt="Sınır Ötesi Ticaret Forumu" class="w-full h-48 object-cover object-top">
+<div class="absolute top-4 left-4 bg-blue-500 text-white px-3 py-1 rounded-full text-sm font-medium">20 Temmuz 2025</div>
+</div>
+<div class="p-6">
+<h3 class="text-xl font-bold text-primary mb-2">Sınır Ötesi Ticaret Forumu</h3>
+<p class="text-gray-600 mb-4">Ortadoğu ülkeleriyle ticaret imkanları, gümrük prosedürleri ve lojistik çözümler.</p>
+<div class="flex items-center text-gray-500 mb-4">
+<i class="ri-map-pin-line mr-2"></i>
+<span>Hatay Fuar ve Kongre Merkezi</span>
+</div>
+<div class="flex items-center text-gray-500 mb-6">
+<i class="ri-time-line mr-2"></i>
+<span>09:00 - 18:00</span>
+</div>
+<a href="#" class="px-4 py-2 bg-primary text-white !rounded-button hover:bg-opacity-90 inline-block whitespace-nowrap">Kayıt Ol</a>
+</div>
+</div>
+<div class="bg-white rounded-lg shadow-md overflow-hidden card-hover">
+<div class="relative">
+<img src="https://readdy.ai/api/search-image?query=investment%20pitch%20event%20with%20entrepreneurs%20presenting%20to%20investors%2C%20professional%20business%20setting%2C%20modern%20conference%20room&width=600&height=400&seq=event5&orientation=landscape" alt="Yatırımcı-Girişimci Buluşması" class="w-full h-48 object-cover object-top">
+<div class="absolute top-4 left-4 bg-purple-500 text-white px-3 py-1 rounded-full text-sm font-medium">5 Ağustos 2025</div>
+</div>
+<div class="p-6">
+<h3 class="text-xl font-bold text-primary mb-2">Yatırımcı-Girişimci Buluşması</h3>
+<p class="text-gray-600 mb-4">Girişimcilerin projelerini yatırımcılara sunacağı, finansman imkanlarının konuşulacağı etkinlik.</p>
+<div class="flex items-center text-gray-500 mb-4">
+<i class="ri-map-pin-line mr-2"></i>
+<span>Hatay İş Geliştirme Merkezi</span>
+</div>
+<div class="flex items-center text-gray-500 mb-6">
+<i class="ri-time-line mr-2"></i>
+<span>13:00 - 17:00</span>
+</div>
+<a href="#" class="px-4 py-2 bg-primary text-white !rounded-button hover:bg-opacity-90 inline-block whitespace-nowrap">Kayıt Ol</a>
+</div>
+</div>
+<div class="bg-white rounded-lg shadow-md overflow-hidden card-hover">
+<div class="relative">
+<img src="https://readdy.ai/api/search-image?query=export%20strategy%20webinar%20with%20presenter%20on%20screen%2C%20online%20business%20meeting%2C%20professional%20setting&width=600&height=400&seq=event6&orientation=landscape" alt="İhracat Stratejileri Webinarı" class="w-full h-48 object-cover object-top">
+<div class="absolute top-4 left-4 bg-red-500 text-white px-3 py-1 rounded-full text-sm font-medium">15 Ağustos 2025</div>
+</div>
+<div class="p-6">
+<h3 class="text-xl font-bold text-primary mb-2">İhracat Stratejileri Webinarı</h3>
+<p class="text-gray-600 mb-4">İhracata başlama, hedef pazar analizi ve uluslararası ticaret mevzuatı hakkında online seminer.</p>
+<div class="flex items-center text-gray-500 mb-4">
+<i class="ri-computer-line mr-2"></i>
+<span>Online (Zoom)</span>
+</div>
+<div class="flex items-center text-gray-500 mb-6">
+<i class="ri-time-line mr-2"></i>
+<span>14:00 - 16:00</span>
+</div>
+<a href="#" class="px-4 py-2 bg-primary text-white !rounded-button hover:bg-opacity-90 inline-block whitespace-nowrap">Kayıt Ol</a>
+</div>
+</div>
+</div>
+<div class="text-center mt-12">
+<a href="#" class="px-6 py-3 border border-primary text-primary !rounded-button hover:bg-gray-50 inline-block whitespace-nowrap">Tüm Etkinlikleri Görüntüle</a>
+</div>
+</div>
+</section>
+<!-- Press Section -->
+<section class="py-20 bg-gray-50" id="basin">
+<div class="container mx-auto px-4">
+<div class="text-center mb-16">
+<h2 class="text-3xl font-bold text-primary mb-4">Basında Biz</h2>
+<p class="text-gray-600 max-w-3xl mx-auto">Platformumuz ve faaliyetlerimiz hakkında basında çıkan haberler ve medya görünürlüklerimiz.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+<div class="bg-white rounded-lg shadow-md overflow-hidden card-hover">
+<img src="https://readdy.ai/api/search-image?query=newspaper%20article%20about%20business%20development%2C%20economic%20growth%2C%20professional%20business%20news&width=600&height=400&seq=news1&orientation=landscape" alt="Hatay Ekonomi Haberi" class="w-full h-48 object-cover object-top">
+<div class="p-6">
+<div class="flex items-center justify-between mb-4">
+<span class="text-sm text-gray-500">15 Mayıs 2025</span>
+<span class="text-sm font-medium text-primary">Hürriyet Gazetesi</span>
+</div>
+<h3 class="text-xl font-bold text-primary mb-2">Hatay'da Ekonomik Canlanma: İş İnsanları Birliği'nin Başarısı</h3>
+<p class="text-gray-600 mb-4">Hatay İş İnsanları Birliği'nin bölgede gerçekleştirdiği projeler ve ekonomik canlanmaya katkıları ele alındı.</p>
+<a href="#" class="text-primary font-medium hover:underline">Haberi Oku →</a>
+</div>
+</div>
+<div class="bg-white rounded-lg shadow-md overflow-hidden card-hover">
+<img src="https://readdy.ai/api/search-image?query=business%20magazine%20cover%20about%20investment%20opportunities%2C%20economic%20growth%2C%20professional%20business%20publication&width=600&height=400&seq=news2&orientation=landscape" alt="Ekonomist Dergisi" class="w-full h-48 object-cover object-top">
+<div class="p-6">
+<div class="flex items-center justify-between mb-4">
+<span class="text-sm text-gray-500">10 Mayıs 2025</span>
+<span class="text-sm font-medium text-primary">Ekonomist Dergisi</span>
+</div>
+<h3 class="text-xl font-bold text-primary mb-2">Hatay'ın Yükselen Yıldızları: İş Dünyasının Öncüleri</h3>
+<p class="text-gray-600 mb-4">Birliğimizin başkanı ile yapılan röportaj ve Hatay'daki yatırım fırsatları hakkında kapsamlı bir analiz yayınlandı.</p>
+<a href="#" class="text-primary font-medium hover:underline">Haberi Oku →</a>
+</div>
+</div>
+<div class="bg-white rounded-lg shadow-md overflow-hidden card-hover">
+<img src="https://readdy.ai/api/search-image?query=TV%20interview%20with%20business%20leaders%2C%20professional%20news%20studio%20setting%2C%20economic%20news%20broadcast&width=600&height=400&seq=news3&orientation=landscape" alt="CNN Türk Röportajı" class="w-full h-48 object-cover object-top">
+<div class="p-6">
+<div class="flex items-center justify-between mb-4">
+<span class="text-sm text-gray-500">5 Mayıs 2025</span>
+<span class="text-sm font-medium text-primary">CNN Türk</span>
+</div>
+<h3 class="text-xl font-bold text-primary mb-2">Hatay Ekonomi Zirvesi CNN Türk'te</h3>
+<p class="text-gray-600 mb-4">Düzenlediğimiz Ekonomi Zirvesi, CNN Türk'te canlı yayınlandı ve birlik başkanımız stüdyo konuğu olarak katıldı.</p>
+<a href="#" class="text-primary font-medium hover:underline">Haberi Oku →</a>
+</div>
+</div>
+<div class="bg-white rounded-lg shadow-md overflow-hidden card-hover">
+<img src="https://readdy.ai/api/search-image?query=business%20website%20article%20about%20economic%20development%2C%20professional%20online%20business%20news&width=600&height=400&seq=news4&orientation=landscape" alt="Bloomberg HT Haberi" class="w-full h-48 object-cover object-top">
+<div class="p-6">
+<div class="flex items-center justify-between mb-4">
+<span class="text-sm text-gray-500">1 Mayıs 2025</span>
+<span class="text-sm font-medium text-primary">Bloomberg HT</span>
+</div>
+<h3 class="text-xl font-bold text-primary mb-2">Hatay'da Yatırım Fırsatları Artıyor</h3>
+<p class="text-gray-600 mb-4">Birliğimizin çalışmaları sonucunda bölgeye gelen yatırımlar ve ekonomik göstergeler Bloomberg HT'de analiz edildi.</p>
+<a href="#" class="text-primary font-medium hover:underline">Haberi Oku →</a>
+</div>
+</div>
+<div class="bg-white rounded-lg shadow-md overflow-hidden card-hover">
+<img src="https://readdy.ai/api/search-image?query=local%20newspaper%20article%20about%20business%20development%2C%20regional%20economic%20news%2C%20professional%20publication&width=600&height=400&seq=news5&orientation=landscape" alt="Hatay Gazetesi Haberi" class="w-full h-48 object-cover object-top">
+<div class="p-6">
+<div class="flex items-center justify-between mb-4">
+<span class="text-sm text-gray-500">25 Nisan 2025</span>
+<span class="text-sm font-medium text-primary">Hatay Gazetesi</span>
+</div>
+<h3 class="text-xl font-bold text-primary mb-2">İş İnsanları Birliği'nden Eğitim Seferberliği</h3>
+<p class="text-gray-600 mb-4">Birliğimizin gençlere yönelik başlattığı eğitim ve mentorluk programı yerel basında geniş yer buldu.</p>
+<a href="#" class="text-primary font-medium hover:underline">Haberi Oku →</a>
+</div>
+</div>
+<div class="bg-white rounded-lg shadow-md overflow-hidden card-hover">
+<img src="https://readdy.ai/api/search-image?query=business%20radio%20interview%2C%20podcast%20recording%20studio%2C%20professional%20audio%20setting&width=600&height=400&seq=news6&orientation=landscape" alt="TRT Radyo Programı" class="w-full h-48 object-cover object-top">
+<div class="p-6">
+<div class="flex items-center justify-between mb-4">
+<span class="text-sm text-gray-500">20 Nisan 2025</span>
+<span class="text-sm font-medium text-primary">TRT Radyo</span>
+</div>
+<h3 class="text-xl font-bold text-primary mb-2">Ekonominin Nabzı Programı Hatay Özel</h3>
+<p class="text-gray-600 mb-4">TRT Radyo'da yayınlanan Ekonominin Nabzı programında birliğimizin faaliyetleri ve Hatay ekonomisi konuşuldu.</p>
+<a href="#" class="text-primary font-medium hover:underline">Haberi Oku →</a>
+</div>
+</div>
+</div>
+<div class="text-center mt-12">
+<a href="#" class="px-6 py-3 border border-primary text-primary !rounded-button hover:bg-gray-50 inline-block whitespace-nowrap">Tüm Haberleri Görüntüle</a>
+</div>
+</div>
+</section>
+<!-- Contact Section -->
+<section class="py-20 bg-white" id="iletisim">
+<div class="container mx-auto px-4">
+<div class="text-center mb-16">
+<h2 class="text-3xl font-bold text-primary mb-4">İletişim</h2>
+<p class="text-gray-600 max-w-3xl mx-auto">Sorularınız, önerileriniz veya işbirliği talepleriniz için bizimle iletişime geçebilirsiniz.</p>
+</div>
+<div class="grid md:grid-cols-2 gap-12">
+<div>
+<form action="" method="POST" class="bg-white p-8 rounded-lg shadow-md">
+<div class="mb-6">
+<label for="contact-name" class="block text-gray-700 font-medium mb-2">Ad Soyad</label>
+<input type="text" id="contact-name" name="name" class="w-full px-4 py-2 border border-gray-300 rounded focus:border-primary" placeholder="Adınız Soyadınız" required>
+</div>
+<div class="mb-6">
+<label for="contact-email" class="block text-gray-700 font-medium mb-2">E-posta Adresi</label>
+<input type="email" id="contact-email" name="email" class="w-full px-4 py-2 border border-gray-300 rounded focus:border-primary" placeholder="ornek@sirket.com" required>
+</div>
+<div class="mb-6">
+<label for="contact-subject" class="block text-gray-700 font-medium mb-2">Konu</label>
+<input type="text" id="contact-subject" name="subject" class="w-full px-4 py-2 border border-gray-300 rounded focus:border-primary" placeholder="Mesajınızın Konusu" required>
+</div>
+<div class="mb-6">
+<label for="contact-message" class="block text-gray-700 font-medium mb-2">Mesaj</label>
+<textarea id="contact-message" name="message" rows="5" class="w-full px-4 py-2 border border-gray-300 rounded focus:border-primary" placeholder="Mesajınızı buraya yazın..." required maxlength="500"></textarea>
+</div>
+<input type="hidden" name="to_email" value="hatayderneklerfederasyonu@gmail.com">
+<button type="submit" class="w-full py-3 bg-primary text-white font-bold !rounded-button hover:bg-opacity-90 whitespace-nowrap">Gönder</button>
+</form>
+</div>
+<div>
+<div class="bg-white p-8 rounded-lg shadow-md mb-8">
+<h3 class="text-xl font-bold text-primary mb-6">İletişim Bilgileri</h3>
+<div class="space-y-4">
+<div class="flex items-start">
+<div class="w-10 h-10 bg-primary bg-opacity-10 rounded-full flex items-center justify-center mr-4 flex-shrink-0">
+<i class="ri-map-pin-line text-primary"></i>
+</div>
+<div>
+<h4 class="font-medium text-gray-900 mb-1">Adres</h4>
+<p class="text-gray-600">Cumhuriyet Mahallesi, İş Merkezi Caddesi, No: 123, Antakya / Hatay</p>
+</div>
+</div>
+<div class="flex items-start">
+<div class="w-10 h-10 bg-primary bg-opacity-10 rounded-full flex items-center justify-center mr-4 flex-shrink-0">
+<i class="ri-phone-line text-primary"></i>
+</div>
+<div>
+<h4 class="font-medium text-gray-900 mb-1">Telefon</h4>
+<p class="text-gray-600">+90 (326) 123 45 67</p>
+</div>
+</div>
+<div class="flex items-start">
+<div class="w-10 h-10 bg-primary bg-opacity-10 rounded-full flex items-center justify-center mr-4 flex-shrink-0">
+<i class="ri-mail-line text-primary"></i>
+</div>
+<div>
+<h4 class="font-medium text-gray-900 mb-1">E-posta</h4>
+<p class="text-gray-600">info@hatayisinsanlari.org</p>
+</div>
+</div>
+<div class="flex items-start">
+<div class="w-10 h-10 bg-primary bg-opacity-10 rounded-full flex items-center justify-center mr-4 flex-shrink-0">
+<i class="ri-time-line text-primary"></i>
+</div>
+<div>
+<h4 class="font-medium text-gray-900 mb-1">Çalışma Saatleri</h4>
+<p class="text-gray-600">Pazartesi - Cuma: 09:00 - 18:00</p>
+</div>
+</div>
+</div>
+<div class="mt-8">
+<h4 class="font-medium text-gray-900 mb-4">Bizi Takip Edin</h4>
+<div class="flex space-x-4">
+<a href="#" class="w-10 h-10 bg-primary bg-opacity-10 rounded-full flex items-center justify-center hover:bg-opacity-20">
+<i class="ri-linkedin-fill text-primary"></i>
+</a>
+<a href="#" class="w-10 h-10 bg-primary bg-opacity-10 rounded-full flex items-center justify-center hover:bg-opacity-20">
+<i class="ri-twitter-x-fill text-primary"></i>
+</a>
+<a href="#" class="w-10 h-10 bg-primary bg-opacity-10 rounded-full flex items-center justify-center hover:bg-opacity-20">
+<i class="ri-facebook-fill text-primary"></i>
+</a>
+<a href="#" class="w-10 h-10 bg-primary bg-opacity-10 rounded-full flex items-center justify-center hover:bg-opacity-20">
+<i class="ri-instagram-fill text-primary"></i>
+</a>
+<a href="#" class="w-10 h-10 bg-primary bg-opacity-10 rounded-full flex items-center justify-center hover:bg-opacity-20">
+<i class="ri-youtube-fill text-primary"></i>
+</a>
+</div>
+</div>
+</div>
+<div class="bg-white p-8 rounded-lg shadow-md h-64">
+<div style="background-image: url('https://public.readdy.ai/gen_page/map_placeholder_1280x720.png');" class="w-full h-full bg-cover bg-center rounded"></div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- CTA Section -->
+<section class="py-20 bg-primary text-white">
+<div class="container mx-auto px-4 text-center">
+<h2 class="text-3xl font-bold mb-6">Hatay'ın Geleceğine Birlikte Yön Verelim</h2>
+<p class="text-lg mb-8 max-w-3xl mx-auto">Hatay İş İnsanları Birliği'ne katılarak bölgesel kalkınmaya katkı sağlayın, yeni iş fırsatları yakalayın ve geniş bir network ağına dahil olun.</p>
+<div class="flex flex-wrap justify-center gap-4">
+<a href="#" class="px-6 py-3 bg-white text-primary font-bold !rounded-button hover:bg-opacity-90 whitespace-nowrap">Hemen Üye Ol</a>
+<a href="#" class="px-6 py-3 border-2 border-white text-white font-bold !rounded-button hover:bg-white hover:bg-opacity-10 whitespace-nowrap">Bize Ulaşın</a>
+</div>
+</div>
+</section>
+<!-- Footer -->
+<footer class="bg-gray-900 text-white pt-16 pb-8">
+<div class="container mx-auto px-4">
+<div class="grid md:grid-cols-4 gap-8 mb-12">
+<div>
+<div class="flex items-center mb-6">
+<img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAwIiBoZWlnaHQ9IjEwMCIgdmlld0JveD0iMCAwIDEwMCAxMDAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxjaXJjbGUgY3g9IjUwIiBjeT0iNTAiIHI9IjQ4IiBzdHJva2U9IiNGRkZGRkYiIHN0cm9rZS13aWR0aD0iNCIvPgo8Y2lyY2xlIGN4PSI1MCIgY3k9IjUwIiByPSIzMCIgZmlsbD0iI0Y1RTJBOCIvPgo8cGF0aCBkPSJNMzAgNjBDMzAgNjAgNDAgNzAgNTAgNzBDNjAgNzAgNzAgNjAgNzAgNjBDNzAgNjAgNjUgNDUgNTAgNDVDMzUgNDUgMzAgNjAgMzAgNjBaIiBmaWxsPSIjRUE4QzU1Ii8+CjxwYXRoIGQ9Ik0zMCA2MEMzMCA2MCAzNSA0NSA1MCA0NUM2NSA0NSA3MCA2MCA3MCA2MCIgc3Ryb2tlPSIjRkZGRkZGIiBzdHJva2Utd2lkdGg9IjIiLz4KPHBhdGggZD0iTTQwIDUwQzQwIDUwIDQyIDU1IDUwIDU1QzU4IDU1IDYwIDUwIDYwIDUwIiBzdHJva2U9IiNGRkZGRkYiIHN0cm9rZS13aWR0aD0iMiIvPgo8Y2lyY2xlIGN4PSI1MCIgY3k9IjM1IiByPSI1IiBmaWxsPSIjQzkzQTNBIi8+CjxwYXRoIGQ9Ik01MiAzMkw1NSAyOCIgc3Ryb2tlPSIjQzkzQTNBIiBzdHJva2Utd2lkdGg9IjIiLz4KPC9zdmc+" alt="Hatay İş İnsanları Birliği" class="h-12">
+<div class="ml-4">
+<h3 class="text-lg font-bold">Hatay İş İnsanları Birliği</h3>
+<p class="text-sm text-gray-400">Yatırım ve İş Birliği Platformu</p>
+</div>
+</div>
+<p class="text-gray-400 mb-6">Hatay'ın ekonomik potansiyelini en üst düzeye çıkarmak için çalışan, iş insanlarını bir araya getiren platform.</p>
+<div class="flex space-x-4">
+<a href="#" class="text-gray-400 hover:text-white">
+<i class="ri-linkedin-fill ri-lg"></i>
+</a>
+<a href="#" class="text-gray-400 hover:text-white">
+<i class="ri-twitter-x-fill ri-lg"></i>
+</a>
+<a href="#" class="text-gray-400 hover:text-white">
+<i class="ri-facebook-fill ri-lg"></i>
+</a>
+<a href="#" class="text-gray-400 hover:text-white">
+<i class="ri-instagram-fill ri-lg"></i>
+</a>
+<a href="#" class="text-gray-400 hover:text-white">
+<i class="ri-youtube-fill ri-lg"></i>
+</a>
+</div>
+</div>
+<div>
+<h4 class="text-lg font-bold mb-6">Hızlı Erişim</h4>
+<ul class="space-y-3">
+<li><a href="#" class="text-gray-400 hover:text-white">Ana Sayfa</a></li>
+<li><a href="#hakkimizda" class="text-gray-400 hover:text-white">Hakkımızda</a></li>
+<li><a href="#uyelik" class="text-gray-400 hover:text-white">Üyelik</a></li>
+<li><a href="#firsatlar" class="text-gray-400 hover:text-white">İş Birliği Fırsatları</a></li>
+<li><a href="#etkinlikler" class="text-gray-400 hover:text-white">Etkinlikler</a></li>
+<li><a href="#basin" class="text-gray-400 hover:text-white">Basında Biz</a></li>
+<li><a href="#iletisim" class="text-gray-400 hover:text-white">İletişim</a></li>
+</ul>
+</div>
+<div>
+<h4 class="text-lg font-bold mb-6">Faydalı Bağlantılar</h4>
+<ul class="space-y-3">
+<li><a href="#" class="text-gray-400 hover:text-white">Hatay Valiliği</a></li>
+<li><a href="#" class="text-gray-400 hover:text-white">Hatay Büyükşehir Belediyesi</a></li>
+<li><a href="#" class="text-gray-400 hover:text-white">Hatay Ticaret ve Sanayi Odası</a></li>
+<li><a href="#" class="text-gray-400 hover:text-white">KOSGEB Hatay</a></li>
+<li><a href="#" class="text-gray-400 hover:text-white">Doğu Akdeniz Kalkınma Ajansı</a></li>
+<li><a href="#" class="text-gray-400 hover:text-white">Ticaret Bakanlığı</a></li>
+<li><a href="#" class="text-gray-400 hover:text-white">Sanayi ve Teknoloji Bakanlığı</a></li>
+</ul>
+</div>
+<div>
+<h4 class="text-lg font-bold mb-6">Bültenimize Abone Olun</h4>
+<p class="text-gray-400 mb-4">Güncel fırsatlar, etkinlikler ve haberlerden haberdar olmak için bültenimize abone olun.</p>
+<form action="" method="POST" class="mb-6">
+<div class="flex">
+<input type="email" name="email" class="w-full px-4 py-2 bg-gray-800 border border-gray-700 rounded-l focus:outline-none focus:border-secondary" placeholder="E-posta adresiniz" required>
+<input type="hidden" name="to_email" value="hatayderneklerfederasyonu@gmail.com">
+<input type="hidden" name="subject" value="Bülten Aboneliği">
+<button type="submit" class="px-4 py-2 bg-secondary text-primary font-bold rounded-r hover:bg-opacity-90 whitespace-nowrap">Abone Ol</button>
+</div>
+</form>
+<div>
+<h4 class="text-lg font-bold mb-4">İletişim</h4>
+<p class="text-gray-400 mb-2">
+<i class="ri-map-pin-line mr-2"></i> Antakya / Hatay
+</p>
+<p class="text-gray-400 mb-2">
+<i class="ri-phone-line mr-2"></i> +90 (326) 123 45 67
+</p>
+<p class="text-gray-400">
+<i class="ri-mail-line mr-2"></i> info@hatayisinsanlari.org
+</p>
+</div>
+</div>
+</div>
+<hr class="border-gray-800 mb-8">
+<div class="flex flex-col md:flex-row justify-between items-center">
+<p class="text-gray-400 text-sm mb-4 md:mb-0">© 2025 Hatay İş İnsanları Birliği. Tüm hakları saklıdır.</p>
+<div class="flex space-x-4">
+<a href="#" class="text-gray-400 hover:text-white text-sm">Gizlilik Politikası</a>
+<a href="#" class="text-gray-400 hover:text-white text-sm">Kullanım Koşulları</a>
+<a href="#" class="text-gray-400 hover:text-white text-sm">Çerez Politikası</a>
+</div>
+</div>
+</div>
+</footer>
+<script id="mobileMenuScript">
+document.addEventListener('DOMContentLoaded', function() {
+const mobileMenuButton = document.querySelector('.md\\:hidden');
+const mobileMenu = document.createElement('div');
+mobileMenu.className = 'fixed inset-0 bg-white z-50 transform translate-x-full transition-transform duration-300 ease-in-out';
+mobileMenu.innerHTML = `
+<div class="flex justify-between items-center p-4 border-b">
+<div class="flex items-center">
+<img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAwIiBoZWlnaHQ9IjEwMCIgdmlld0JveD0iMCAwIDEwMCAxMDAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxjaXJjbGUgY3g9IjUwIiBjeT0iNTAiIHI9IjQ4IiBzdHJva2U9IiMxQjM2NUQiIHN0cm9rZS13aWR0aD0iNCIvPgo8Y2lyY2xlIGN4PSI1MCIgY3k9IjUwIiByPSIzMCIgZmlsbD0iI0Y1RTJBOCIvPgo8cGF0aCBkPSJNMzAgNjBDMzAgNjAgNDAgNzAgNTAgNzBDNjAgNzAgNzAgNjAgNzAgNjBDNzAgNjAgNjUgNDUgNTAgNDVDMzUgNDUgMzAgNjAgMzAgNjBaIiBmaWxsPSIjRUE4QzU1Ii8+CjxwYXRoIGQ9Ik0zMCA2MEMzMCA2MCAzNSA0NSA1MCA0NUM2NSA0NSA3MCA2MCA3MCA2MCIgc3Ryb2tlPSIjMUIzNjVEIiBzdHJva2Utd2lkdGg9IjIiLz4KPHBhdGggZD0iTTQwIDUwQzQwIDUwIDQyIDU1IDUwIDU1QzU4IDU1IDYwIDUwIDYwIDUwIiBzdHJva2U9IiMxQjM2NUQiIHN0cm9rZS13aWR0aD0iMiIvPgo8Y2lyY2xlIGN4PSI1MCIgY3k9IjM1IiByPSI1IiBmaWxsPSIjQzkzQTNBIi8+CjxwYXRoIGQ9Ik01MiAzMkw1NSAyOCIgc3Ryb2tlPSIjQzkzQTNBIiBzdHJva2Utd2lkdGg9IjIiLz4KPC9zdmc+" alt="Hatay İş İnsanları Birliği" class="h-12">
+<div class="ml-4">
+<h1 class="text-lg font-bold text-primary">Hatay İş İnsanları Birliği</h1>
+<p class="text-sm text-gray-600">Yatırım ve İş Birliği Platformu</p>
+</div>
+</div>
+<button class="close-menu w-10 h-10 flex items-center justify-center text-primary">
+<i class="ri-close-line ri-2x"></i>
+</button>
+</div>
+<div class="p-4">
+<nav class="flex flex-col space-y-4">
+<a href="#" class="text-primary font-medium py-2 border-b border-gray-100">Ana Sayfa</a>
+<a href="#hakkimizda" class="text-primary font-medium py-2 border-b border-gray-100">Hakkımızda</a>
+<a href="#uyelik" class="text-primary font-medium py-2 border-b border-gray-100">Üyelik</a>
+<a href="#firsatlar" class="text-primary font-medium py-2 border-b border-gray-100">İş Birliği Fırsatları</a>
+<a href="#etkinlikler" class="text-primary font-medium py-2 border-b border-gray-100">Etkinlikler</a>
+<a href="#basin" class="text-primary font-medium py-2 border-b border-gray-100">Basında Biz</a>
+<a href="#iletisim" class="text-primary font-medium py-2 border-b border-gray-100">İletişim</a>
+</nav>
+<div class="mt-6 flex items-center justify-center space-x-2">
+<a href="#" class="text-gray-600 hover:text-primary">TR</a>
+<span class="text-gray-400">|</span>
+<a href="#" class="text-gray-600 hover:text-primary">EN</a>
+</div>
+<div class="mt-6 flex flex-col space-y-3">
+<a href="#" class="py-2 text-center text-primary border border-primary !rounded-button hover:bg-gray-50 whitespace-nowrap">Üye Girişi</a>
+<a href="#" class="py-2 text-center bg-primary text-white !rounded-button hover:bg-opacity-90 whitespace-nowrap">Üye Ol</a>
+</div>
+</div>
+`;
+document.body.appendChild(mobileMenu);
+mobileMenuButton.addEventListener('click', function() {
+mobileMenu.classList.remove('translate-x-full');
+});
+mobileMenu.querySelector('.close-menu').addEventListener('click', function() {
+mobileMenu.classList.add('translate-x-full');
+});
+const mobileMenuLinks = mobileMenu.querySelectorAll('a');
+mobileMenuLinks.forEach(link => {
+link.addEventListener('click', function() {
+mobileMenu.classList.add('translate-x-full');
+});
+});
+});
+</script>
+<script id="navActiveScript">
+document.addEventListener('DOMContentLoaded', function() {
+const sections = document.querySelectorAll('section[id]');
+const navLinks = document.querySelectorAll('.nav-link');
+function highlightNavOnScroll() {
+let scrollPosition = window.scrollY + 100;
+sections.forEach(section => {
+const sectionTop = section.offsetTop;
+const sectionHeight = section.offsetHeight;
+const sectionId = section.getAttribute('id');
+if (scrollPosition >= sectionTop && scrollPosition < sectionTop + sectionHeight) {
+navLinks.forEach(link => {
+link.classList.remove('active');
+if (link.getAttribute('href') === '#' + sectionId) {
+link.classList.add('active');
+}
+});
+}
+});
+// If at the top of the page, highlight home
+if (scrollPosition < 100) {
+navLinks.forEach(link => {
+link.classList.remove('active');
+if (link.getAttribute('href') === '#') {
+link.classList.add('active');
+}
+});
+}
+}
+window.addEventListener('scroll', highlightNavOnScroll);
+highlightNavOnScroll(); // Run once on page load
+});
+</script>
+<script id="membershipTabsScript">
+document.addEventListener('DOMContentLoaded', function() {
+const membershipForm = document.getElementById('uyelik').querySelector('form');
+const stepsIndicator = document.getElementById('uyelik').querySelector('.bg-primary');
+
+let formData = {
+  step1: {},
+  step2: {}
+};
+
+if (membershipForm) {
+  membershipForm.addEventListener('submit', function(e) {
+    e.preventDefault();
+    
+    // Store step 1 data
+    formData.step1 = {
+      fullname: membershipForm.querySelector('#fullname').value,
+      company: membershipForm.querySelector('#company').value,
+      position: membershipForm.querySelector('#position').value,
+      email: membershipForm.querySelector('#email').value,
+      phone: membershipForm.querySelector('#phone').value,
+      sector: membershipForm.querySelector('#sector').value
+    };
+
+    // Update progress bar
+    stepsIndicator.style.width = '66%';
+
+    // Change step number styling
+    const step1 = document.getElementById('uyelik').querySelector('.w-8:first-of-type');
+    const step2 = document.getElementById('uyelik').querySelector('.w-8:nth-of-type(2)');
+    
+    step1.classList.remove('bg-primary');
+    step1.classList.add('bg-green-500');
+    step1.innerHTML = '<i class="ri-check-line"></i>';
+    
+    step2.classList.remove('bg-gray-200', 'text-gray-600');
+    step2.classList.add('bg-primary', 'text-white');
+
+    // Change form content
+    membershipForm.innerHTML = `
+      <div class="mb-6">
+        <label class="block text-gray-700 font-medium mb-2">Şirket Bilgileri</label>
+        <div class="mb-4">
+          <input type="text" name="company_address" class="w-full px-4 py-2 border border-gray-300 rounded focus:border-primary" placeholder="Şirket Adresi" required>
+        </div>
+        <div class="mb-4">
+          <input type="text" name="tax_office" class="w-full px-4 py-2 border border-gray-300 rounded focus:border-primary" placeholder="Vergi Dairesi" required>
+        </div>
+        <div class="mb-4">
+          <input type="text" name="tax_number" class="w-full px-4 py-2 border border-gray-300 rounded focus:border-primary" placeholder="Vergi Numarası" required>
+        </div>
+      </div>
+      <div class="mb-6">
+        <label class="block text-gray-700 font-medium mb-2">Faaliyet Alanları</label>
+        <div class="grid grid-cols-2 gap-3">
+          <label class="flex items-center">
+            <input type="checkbox" name="business_areas" value="export" class="custom-checkbox mr-2">
+            <span class="text-gray-700">İhracat</span>
+          </label>
+          <label class="flex items-center">
+            <input type="checkbox" name="business_areas" value="import" class="custom-checkbox mr-2">
+            <span class="text-gray-700">İthalat</span>
+          </label>
+          <label class="flex items-center">
+            <input type="checkbox" name="business_areas" value="production" class="custom-checkbox mr-2">
+            <span class="text-gray-700">Üretim</span>
+          </label>
+          <label class="flex items-center">
+            <input type="checkbox" name="business_areas" value="service" class="custom-checkbox mr-2">
+            <span class="text-gray-700">Hizmet</span>
+          </label>
+          <label class="flex items-center">
+            <input type="checkbox" name="business_areas" value="retail" class="custom-checkbox mr-2">
+            <span class="text-gray-700">Perakende</span>
+          </label>
+          <label class="flex items-center">
+            <input type="checkbox" name="business_areas" value="wholesale" class="custom-checkbox mr-2">
+            <span class="text-gray-700">Toptan</span>
+          </label>
+        </div>
+      </div>
+      <div class="mb-6">
+        <label class="block text-gray-700 font-medium mb-2">Çalışan Sayısı</label>
+        <div class="relative">
+          <select name="employee_count" class="w-full px-4 py-2 border border-gray-300 rounded appearance-none focus:border-primary pr-8" required>
+            <option value="" selected disabled>Seçiniz</option>
+            <option value="1-10">1-10</option>
+            <option value="11-50">11-50</option>
+            <option value="51-100">51-100</option>
+            <option value="101-250">101-250</option>
+            <option value="251+">251+</option>
+          </select>
+          <div class="absolute right-3 top-1/2 transform -translate-y-1/2 pointer-events-none">
+            <i class="ri-arrow-down-s-line text-gray-500"></i>
+          </div>
+        </div>
+      </div>
+      <div class="flex justify-between">
+        <button type="button" class="px-6 py-2 border border-primary text-primary !rounded-button hover:bg-gray-50 whitespace-nowrap back-button">Geri</button>
+        <button type="submit" class="px-6 py-2 bg-primary text-white !rounded-button hover:bg-opacity-90 whitespace-nowrap">Devam Et</button>
+      </div>
+    `;
+
+    // Add back button functionality
+    const backButton = membershipForm.querySelector('.back-button');
+    backButton.addEventListener('click', function() {
+      membershipForm.innerHTML = `
+        <div class="mb-6">
+          <label for="fullname" class="block text-gray-700 font-medium mb-2">Ad Soyad</label>
+          <input type="text" id="fullname" name="fullname" class="w-full px-4 py-2 border border-gray-300 rounded focus:border-primary" placeholder="Adınız Soyadınız" value="${formData.step1.fullname || ''}" required>
+        </div>
+        <div class="mb-6">
+          <label for="company" class="block text-gray-700 font-medium mb-2">Şirket Adı</label>
+          <input type="text" id="company" name="company" class="w-full px-4 py-2 border border-gray-300 rounded focus:border-primary" placeholder="Şirketinizin Adı" value="${formData.step1.company || ''}" required>
+        </div>
+        <div class="mb-6">
+          <label for="position" class="block text-gray-700 font-medium mb-2">Pozisyon</label>
+          <input type="text" id="position" name="position" class="w-full px-4 py-2 border border-gray-300 rounded focus:border-primary" placeholder="Şirketteki Pozisyonunuz" value="${formData.step1.position || ''}" required>
+        </div>
+        <div class="mb-6">
+          <label for="email" class="block text-gray-700 font-medium mb-2">E-posta Adresi</label>
+          <input type="email" id="email" name="email" class="w-full px-4 py-2 border border-gray-300 rounded focus:border-primary" placeholder="ornek@sirket.com" value="${formData.step1.email || ''}" required>
+        </div>
+        <div class="mb-6">
+          <label for="phone" class="block text-gray-700 font-medium mb-2">Telefon</label>
+          <input type="tel" id="phone" name="phone" class="w-full px-4 py-2 border border-gray-300 rounded focus:border-primary" placeholder="05XX XXX XX XX" value="${formData.step1.phone || ''}" required>
+        </div>
+        <div class="mb-6">
+          <label for="sector" class="block text-gray-700 font-medium mb-2">Faaliyet Sektörü</label>
+          <div class="relative">
+            <select id="sector" name="sector" class="w-full px-4 py-2 border border-gray-300 rounded appearance-none focus:border-primary pr-8" required>
+              <option value="" disabled>Sektör Seçiniz</option>
+              <option value="tarim" ${formData.step1.sector === 'tarim' ? 'selected' : ''}>Tarım ve Gıda</option>
+              <option value="lojistik" ${formData.step1.sector === 'lojistik' ? 'selected' : ''}>Lojistik</option>
+              <option value="tekstil" ${formData.step1.sector === 'tekstil' ? 'selected' : ''}>Tekstil</option>
+              <option value="turizm" ${formData.step1.sector === 'turizm' ? 'selected' : ''}>Turizm</option>
+              <option value="insaat" ${formData.step1.sector === 'insaat' ? 'selected' : ''}>İnşaat</option>
+              <option value="enerji" ${formData.step1.sector === 'enerji' ? 'selected' : ''}>Enerji</option>
+              <option value="saglik" ${formData.step1.sector === 'saglik' ? 'selected' : ''}>Sağlık</option>
+              <option value="teknoloji" ${formData.step1.sector === 'teknoloji' ? 'selected' : ''}>Teknoloji</option>
+              <option value="diger" ${formData.step1.sector === 'diger' ? 'selected' : ''}>Diğer</option>
+            </select>
+            <div class="absolute right-3 top-1/2 transform -translate-y-1/2 pointer-events-none">
+              <i class="ri-arrow-down-s-line text-gray-500"></i>
+            </div>
+          </div>
+        </div>
+        <div class="mb-6">
+          <label class="flex items-center">
+            <input type="checkbox" class="custom-checkbox mr-2" required>
+            <span class="text-gray-700">Üyelik koşullarını ve gizlilik politikasını okudum, kabul ediyorum.</span>
+          </label>
+        </div>
+        <button type="submit" class="w-full py-3 bg-primary text-white font-bold !rounded-button hover:bg-opacity-90 whitespace-nowrap">Devam Et</button>
+      `;
+
+      // Reset progress indicators
+      stepsIndicator.style.width = '33%';
+      step1.classList.remove('bg-green-500');
+      step1.classList.add('bg-primary');
+      step1.textContent = '1';
+      step2.classList.remove('bg-primary', 'text-white');
+      step2.classList.add('bg-gray-200', 'text-gray-600');
+    });
+// Add next step functionality
+membershipForm.addEventListener('submit', function(e) {
+e.preventDefault();
+// Update progress bar
+stepsIndicator.style.width = '100%';
+// Change step number styling
+const step2 = document.querySelector('#uyelik .w-8:nth-of-type(2)');
+const step3 = document.querySelector('#uyelik .w-8:nth-of-type(3)');
+step2.classList.remove('bg-primary');
+step2.classList.add('bg-green-500');
+step2.innerHTML = '<i class="ri-check-line"></i>';
+step3.classList.remove('bg-gray-200', 'text-gray-600');
+step3.classList.add('bg-primary', 'text-white');
+// Change form content
+membershipForm.innerHTML = `
+<div class="text-center py-8">
+<div class="w-20 h-20 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-6">
+<i class="ri-check-line ri-3x text-green-600"></i>
+</div>
+<h3 class="text-2xl font-bold text-primary mb-4">Başvurunuz Alındı!</h3>
+<p class="text-gray-600 mb-6">Üyelik başvurunuz başarıyla alınmıştır. Başvurunuz incelendikten sonra en kısa sürede sizinle iletişime geçilecektir.</p>
+<a href="#" class="px-6 py-3 bg-primary text-white !rounded-button hover:bg-opacity-90 inline-block whitespace-nowrap">Ana Sayfaya Dön</a>
+</div>
+`;
+});
+});
+}
+});
+</script>
+<script id="eventsTabsScript">
+document.addEventListener('DOMContentLoaded', function() {
+const eventButtons = document.querySelectorAll('#etkinlikler .flex.flex-wrap.gap-4 button');
+eventButtons.forEach(button => {
+button.addEventListener('click', function() {
+// Remove active class from all buttons
+eventButtons.forEach(btn => {
+btn.classList.remove('bg-primary', 'text-white');
+btn.classList.add('border', 'border-gray-300', 'text-gray-700', 'hover:bg-gray-50');
+});
+// Add active class to clicked button
+this.classList.remove('border', 'border-gray-300', 'text-gray-700', 'hover:bg-gray-50');
+this.classList.add('bg-primary', 'text-white');
+});
+});
+});
+</script>
+<script id="sliderScript">
+document.addEventListener('DOMContentLoaded', function() {
+const sliderContainer = document.querySelector('#firsatlar .flex.overflow-x-auto');
+const prevButton = document.querySelector('#firsatlar [class*="-left-4"]');
+const nextButton = document.querySelector('#firsatlar [class*="-right-4"]');
+if (sliderContainer && prevButton && nextButton) {
+const slideWidth = sliderContainer.querySelector('.min-w-\\[350px\\]').offsetWidth + 24; // Card width + gap
+prevButton.addEventListener('click', function() {
+sliderContainer.scrollBy({ left: -slideWidth, behavior: 'smooth' });
+});
+nextButton.addEventListener('click', function() {
+sliderContainer.scrollBy({ left: slideWidth, behavior: 'smooth' });
+});
+}
+});
+</script>
+</body>
+</html>
